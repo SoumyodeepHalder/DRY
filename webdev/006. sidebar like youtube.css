@@ -1,0 +1,33 @@
+.sidebar {
+    height: calc(100vh - 50px);
+    background-color: var(--color4);
+    width: 70px;
+    padding: 20px 10px;
+    color: var(--colorn);
+}
+.sidebar span {
+    opacity: 0;
+}
+.sidebar.open {
+    width: 250px;
+}
+.sidebar.open span {
+    opacity: 1;
+}
+.sidebar-elem {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 0px 10px;
+    color: var(--color8);
+}
+.sidebar-elem:hover {
+    /* background-color: rgb(144, 144, 144); */
+    background-color: var(--color5);
+}
+.sidebar-icon {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    filter: invert();
+}
