@@ -1,4 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 :root {
+    --color1: rgb(0, 0, 0);
+    --color2: rgb(20, 20, 20);
+    --color3: rgb(40, 40, 40);
+    --color4: rgb(60,60,60);
+    --color5:rgb(80,80,80);
+    --color6:rgb(100,100,100);
+    --color7:rgb(120,120,120);
+    --color8: rgb(200, 200, 200);
     --colora:rgb(40,40,40);
     --colorb:rgb(60, 60, 60);
     --colorc:rgb(80, 80, 80);
