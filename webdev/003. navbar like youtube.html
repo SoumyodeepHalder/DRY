@@ -1,0 +1,94 @@
+:root {
+    --colora:rgb(40,40,40);
+    --colorb:rgb(60, 60, 60);
+    --colorc:rgb(80, 80, 80);
+    --colord:rgb(200, 200, 200);
+}
+body {
+    background-color: var(--colora);
+}
+.navbar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--colorb);
+    padding: 0px 20px;
+    /* color: var(--colorn); */
+    color: var(--colord);
+}
+.navleft {
+    display: flex;
+    align-items: center;
+}
+.navmenu {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    filter: invert();
+}
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: var(--colorc);
+    padding: 10px;
+    height: 30px;
+}
+.search-icon {
+    width: 30px;
+    display: flex;
+    align-items: center;
+}
+.search-icon img {
+    height: 20px;
+    width: 20px;
+    filter: invert();
+}
+input {
+    height: 30px;
+    width: 500px;
+    outline: none;
+    border: none;
+    background-color: var(--colorc);
+    color: var(--colord);
+}
+input::placeholder { /* Most modern browsers support this now. */
+    color: var(--colord);
+ }
+.navright {
+    display: flex;
+    align-items: center;
+}
+.navright-elem {
+    padding-right: 30px;
+    color: var(--colord);
+}
+
+
+<div class="navbar">
+        <div class="navleft">
+            <div class="navmenu">
+                <img src="menu.png" alt="">
+            </div>
+            <h1>LOGO</h1>
+        </div>
+        <div class="navcenter">
+            <div class="search-box">
+                <div class="search-icon">
+                    <img src="search.png" alt="">
+                </div>
+                <input type="text" placeholder="search">
+            </div>
+        </div>
+        <div class="navright">
+            <div class="navright-elem">
+                <span>Dashboard</span>
+            </div>
+            <div class="navright-elem">
+                <span>Settings</span>
+            </div>
+            <div class="navright-elem">
+                <span>Login</span>
+            </div>
+        </div>
+    </div>
